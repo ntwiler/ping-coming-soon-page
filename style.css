@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+:root {
+  --blue: #4f7df3;
+  --pale-blue: #c2d3ff;
+  --light-red: #ff5263;
+  --gray: #969696;
+  --very-dark-blue: #15202a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap; /*for mobile-first*/
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+  line-height: normal;
+  font-size: 1.25rem;
+  background-color: #fff;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 15rem;
+  margin-top: 5rem;
+  background-color: #fff;
+}
+.logo {
+  width: 3.5rem;
+}
+.title {
+  margin-top: 2rem;
+  color: var(--gray);
+  display: flex;
+  font-family: Libre Franklin;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.title-dark {
+  padding-left: 0.3rem;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+.sub-title {
+  margin-top: 0.94rem;
+  color: var(--very-dark-blue);
+  text-align: center;
+  font-family: Libre Franklin;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.email {
+  margin-top: 2rem;
+  width: 17.5625rem;
+  height: 2.5rem;
+  border-radius: 1.75rem;
+  border: 1px solid #c2d3ff;
+  background: #fff;
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
+
+  color: #b8c7ed;
+  text-align: center;
+  font-family: Libre Franklin;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem; /* 166.667% */
+}
+.btn {
+  margin-top: 0.62rem;
+  width: 17.625rem;
+  height: 2.5rem;
+  border-radius: 1.75rem;
+  border: none;
+  background-color: var(--blue);
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+
+  color: #fff;
+  text-align: center;
+  font-family: Libre Franklin;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.dashboard {
+  width: 22rem;
+  margin-top: 4.5rem;
+}
+
+.footer {
+  margin-top: 8.26rem;
+  margin-bottom: 2.3rem;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social-logo {
+  filter: invert(40%) sepia(96%) saturate(980%) hue-rotate(205deg)
+    brightness(95%) contrast(100%);
+  width: 2rem;
+  border: #4c7bf326 0.125rem solid;
+  border-radius: 50%;
+  padding: 0.34rem;
+}
+.footer-text {
+  color: var(--gray);
+  font-size: 0.625rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.69rem;
+}
